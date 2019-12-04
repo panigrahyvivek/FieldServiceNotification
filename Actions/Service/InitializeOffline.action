@@ -1,0 +1,21 @@
+{
+	"Service": "/FieldServiceNotification/Services/SampleServiceV2.service",
+	"DefiningRequests": [{
+		"Name": "Customers",
+		"Query": "Customers"
+	}, {
+		"Name": "SalesOrderItems",
+		"Query": "SalesOrderItems"
+	}, {
+		"Name": "SalesOrderHeaders",
+		"Query": "SalesOrderHeaders"
+	}],
+	"_Type": "Action.Type.OfflineOData.Initialize",
+	"ShowActivityIndicator": true,
+	"ActivityIndicatorText": "DownLoading...",
+	"ActionResult": {
+		"_Name": "init"
+	},
+	"OnSuccess": "/FieldServiceNotification/Actions/Service/InitializeOfflineSuccessMessage.action",
+	"OnFailure": "/FieldServiceNotification/Actions/Service/InitializeOfflineFailureMessage.action"
+}

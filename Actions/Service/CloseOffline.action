@@ -1,0 +1,10 @@
+{
+	"_Type": "Action.Type.OfflineOData.Close",
+	"Service": "/FieldServiceNotification/Services/SampleServiceV2.service",
+	"Force": true,
+	"ActionResult": {
+		"_Name": "close"
+	},
+	"OnSuccess": "/FieldServiceNotification/Actions/Service/CloseOfflineSuccessMessage.action",
+	"OnFailure": "/FieldServiceNotification/Actions/Service/CloseOfflineFailureMessage.action"
+}

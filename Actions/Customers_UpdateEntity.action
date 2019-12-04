@@ -1,0 +1,16 @@
+{
+	"OnFailure": "/FieldServiceNotification/Actions/UpdateCustomerEntityFailureMessage.action",
+	"OnSuccess": "/FieldServiceNotification/Actions/CloseModalPage_Complete.action",
+	"Properties": {
+		"EmailAddress": "#Control:FCEmail",
+		"FirstName": "#Control:FCFirstName",
+		"LastName": "#Control:FCLastName",
+		"PhoneNumber": "#Control:FCPhone"
+	},
+	"Target": {
+		"EntitySet": "Customers",
+		"ReadLink": "{@odata.readLink}",
+		"Service": "/FieldServiceNotification/Services/SampleServiceV2.service"
+	},
+	"_Type": "Action.Type.ODataService.UpdateEntity"
+}

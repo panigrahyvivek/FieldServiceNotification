@@ -1,0 +1,8 @@
+{
+	"Message": "Push Notification didn't register",
+	"OKCaption": "OK",
+	"OnFailure": "/FieldServiceNotification/Actions/PushRegisterFailureMessage.action",
+	"OnSuccess": "/FieldServiceNotification/Actions/PushRegisterSuccessMessage.action",
+	"Title": "Failure",
+	"_Type": "Action.Type.Message"
+}

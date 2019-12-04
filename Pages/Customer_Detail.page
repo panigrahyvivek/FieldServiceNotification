@@ -1,0 +1,98 @@
+{
+	"ActionBar": {
+		"Items": [
+			{
+				"OnPress": "/FieldServiceNotification/Actions/NavToCustomers_Edit.action",
+				"Position": "right",
+				"SystemItem": "Edit",
+				"Text": "Item",
+				"Visible": true
+			}
+		]
+	},
+	"Caption": "Customer Detail",
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"ObjectHeader": {
+						"BodyText": "{DateOfBirth}",
+						"Description": "{CustomerId}",
+						"DetailImage": "res://mdk_logo.png",
+						"DetailImageIsCircular": false,
+						"Footnote": "{EmailAddress}",
+						"HeadlineText": "Headline",
+						"PreserveIconStackSpacing": true,
+						"ProgressIndicator": "inProgress",
+						"StatusText": "{PhoneNumber}",
+						"Subhead": "{FirstName}"
+					},
+					"Target": "",
+					"Visible": true,
+					"_Name": "SectionObjectHeader0",
+					"_Type": "Section.Type.ObjectHeader"
+				},
+				{
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"KeyAndValues": [
+						{
+							"KeyName": "Address",
+							"Target": "",
+							"Value": "{{#Property:Address/#Property:HouseNumber}}",
+							"Visible": true
+						},
+						{
+							"KeyName": "City",
+							"Target": "",
+							"Value": "{City}",
+							"Visible": true
+						},
+						{
+							"KeyName": "Postal Code",
+							"Target": "",
+							"Value": "{PostalCode}",
+							"Visible": true
+						},
+						{
+							"KeyName": "Country",
+							"Target": "",
+							"Value": "{Country}",
+							"Visible": true
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 2
+					},
+					"MaxItemCount": 1,
+					"Target": "",
+					"Visible": true,
+					"_Name": "SectionKeyValue0",
+					"_Type": "Section.Type.KeyValue"
+				},
+				{
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"KeyAndValues": [
+					],
+					"Layout": {
+						"NumberOfColumns": 2
+					},
+					"MaxItemCount": 1,
+					"Target": "",
+					"Visible": true,
+					"_Name": "SectionKeyValue1",
+					"_Type": "Section.Type.KeyValue"
+				}
+			],
+			"Target": "",
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"Target": "",
+	"_Name": "Customer_Detail",
+	"_Type": "Page"
+}

@@ -1,0 +1,58 @@
+{
+	"Caption": "Customer List",
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"Buttons": [
+						{
+							"OnPress": "/FieldServiceNotification/Actions/NavToCustomers_List.action",
+							"Target": "",
+							"TextAlignment": "center",
+							"Title": "Customer List",
+							"Visible": true
+						}
+					],
+					"EmptySection": {
+						"Caption": "Customer List",
+						"FooterVisible": false
+					},
+					"Target": "",
+					"Visible": true,
+					"_Name": "SectionButtonTable0",
+					"_Type": "Section.Type.ButtonTable"
+				}
+			],
+			"Target": "",
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"Target": "",
+	"ToolBar": {
+		"Controls": [
+			{
+				"Caption": "Logout",
+				"Clickable": true,
+				"Enabled": true,
+				"OnPress": "/FieldServiceNotification/Actions/Logout.action",
+				"Target": "",
+				"Visible": true,
+				"_Name": "LogoutToolbarItem",
+				"_Type": "Control.Type.ToolbarItem"
+			},
+			{
+				"Caption": "Sync",
+				"Clickable": true,
+				"Enabled": true,
+				"OnPress": "/FieldServiceNotification/Actions/Service/SyncStartedMessage.action",
+				"Target": "",
+				"Visible": true,
+				"_Name": "UploadToolbarItem",
+				"_Type": "Control.Type.ToolbarItem"
+			}
+		]
+	},
+	"_Name": "Main",
+	"_Type": "Page"
+}
